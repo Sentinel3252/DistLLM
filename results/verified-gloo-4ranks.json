@@ -1,0 +1,2690 @@
+[
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014091700315475464,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014665399678051472,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014091700315475464,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014665399678051472,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014091700315475464,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014665399678051472,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014091700315475464,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014665399678051472,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.020232299342751503,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.5474993585194183,
+        "updated": true,
+        "rank_max_seconds": 0.019514700397849083,
+        "grad_max_abs_error": 6.938893903907228e-17,
+        "weight_max_abs_error": 8.153200337090993e-17
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.020232299342751503,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.5474993585194183,
+        "updated": true,
+        "rank_max_seconds": 0.019514700397849083,
+        "grad_max_abs_error": 6.938893903907228e-17,
+        "weight_max_abs_error": 8.153200337090993e-17
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.020232299342751503,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.5474993585194183,
+        "updated": true,
+        "rank_max_seconds": 0.019514700397849083,
+        "grad_max_abs_error": 6.938893903907228e-17,
+        "weight_max_abs_error": 8.153200337090993e-17
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.020232299342751503,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.5474993585194183,
+        "updated": true,
+        "rank_max_seconds": 0.019514700397849083,
+        "grad_max_abs_error": 6.938893903907228e-17,
+        "weight_max_abs_error": 8.153200337090993e-17
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6312515025874927,
+        "updated": true,
+        "rank_max_seconds": 0.019417300820350647,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.220446049250313e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.020818600431084633,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 4.3021142204224816e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6312515025874927,
+        "updated": true,
+        "rank_max_seconds": 0.019417300820350647,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.220446049250313e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.020818600431084633,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 4.3021142204224816e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6312515025874927,
+        "updated": true,
+        "rank_max_seconds": 0.019417300820350647,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.220446049250313e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.020818600431084633,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 4.3021142204224816e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6312515025874927,
+        "updated": true,
+        "rank_max_seconds": 0.019417300820350647,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.220446049250313e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.020818600431084633,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 4.3021142204224816e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.02580609917640686,
+        "grad_max_abs_error": 6.071532165918825e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6424355269061106,
+        "updated": true,
+        "rank_max_seconds": 0.022293899208307266,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.3877787807814457e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.02580609917640686,
+        "grad_max_abs_error": 6.071532165918825e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6424355269061106,
+        "updated": true,
+        "rank_max_seconds": 0.022293899208307266,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.3877787807814457e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.02580609917640686,
+        "grad_max_abs_error": 6.071532165918825e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6424355269061106,
+        "updated": true,
+        "rank_max_seconds": 0.022293899208307266,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.3877787807814457e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.02580609917640686,
+        "grad_max_abs_error": 6.071532165918825e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6424355269061106,
+        "updated": true,
+        "rank_max_seconds": 0.022293899208307266,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.3877787807814457e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.017409199848771095,
+        "grad_max_abs_error": 5.898059818321144e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.017844900488853455,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.017409199848771095,
+        "grad_max_abs_error": 5.898059818321144e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.017844900488853455,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.017409199848771095,
+        "grad_max_abs_error": 5.898059818321144e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.017844900488853455,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "ddp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.017409199848771095,
+        "grad_max_abs_error": 5.898059818321144e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.017844900488853455,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.012883000075817108,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014346900396049023,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.012883000075817108,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014346900396049023,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.012883000075817108,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014346900396049023,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.012883000075817108,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.014346900396049023,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.017066700384020805,
+        "grad_max_abs_error": 2.0816681711721685e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.547499358519418,
+        "updated": true,
+        "rank_max_seconds": 0.016373900696635246,
+        "grad_max_abs_error": 1.734723475976807e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.017066700384020805,
+        "grad_max_abs_error": 2.5153490401663703e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.547499358519418,
+        "updated": true,
+        "rank_max_seconds": 0.016373900696635246,
+        "grad_max_abs_error": 2.0816681711721685e-17,
+        "weight_max_abs_error": 5.551115123125783e-17
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.017066700384020805,
+        "grad_max_abs_error": 1.3877787807814457e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.547499358519418,
+        "updated": true,
+        "rank_max_seconds": 0.016373900696635246,
+        "grad_max_abs_error": 1.734723475976807e-17,
+        "weight_max_abs_error": 4.163336342344337e-17
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.017066700384020805,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.547499358519418,
+        "updated": true,
+        "rank_max_seconds": 0.016373900696635246,
+        "grad_max_abs_error": 3.8163916471489756e-17,
+        "weight_max_abs_error": 8.326672684688674e-17
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6312515025874927,
+        "updated": true,
+        "rank_max_seconds": 0.018214300274848938,
+        "grad_max_abs_error": 1.734723475976807e-17,
+        "weight_max_abs_error": 2.220446049250313e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.016806500032544136,
+        "grad_max_abs_error": 1.734723475976807e-17,
+        "weight_max_abs_error": 2.220446049250313e-16
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6312515025874927,
+        "updated": true,
+        "rank_max_seconds": 0.018214300274848938,
+        "grad_max_abs_error": 2.0816681711721685e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.016806500032544136,
+        "grad_max_abs_error": 1.734723475976807e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6312515025874927,
+        "updated": true,
+        "rank_max_seconds": 0.018214300274848938,
+        "grad_max_abs_error": 1.734723475976807e-17,
+        "weight_max_abs_error": 3.191891195797325e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.016806500032544136,
+        "grad_max_abs_error": 1.734723475976807e-17,
+        "weight_max_abs_error": 4.163336342344337e-16
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6312515025874927,
+        "updated": true,
+        "rank_max_seconds": 0.018214300274848938,
+        "grad_max_abs_error": 4.85722573273506e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.016806500032544136,
+        "grad_max_abs_error": 3.8163916471489756e-17,
+        "weight_max_abs_error": 1.240327285323417e-16
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381996,
+        "updated": true,
+        "rank_max_seconds": 0.024974500760436058,
+        "grad_max_abs_error": 3.2959746043559335e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.022447699680924416,
+        "grad_max_abs_error": 3.122502256758253e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381996,
+        "updated": true,
+        "rank_max_seconds": 0.024974500760436058,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.022447699680924416,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 6.938893903907228e-17
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381996,
+        "updated": true,
+        "rank_max_seconds": 0.024974500760436058,
+        "grad_max_abs_error": 2.7755575615628914e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.022447699680924416,
+        "grad_max_abs_error": 3.122502256758253e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381996,
+        "updated": true,
+        "rank_max_seconds": 0.024974500760436058,
+        "grad_max_abs_error": 8.326672684688674e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.022447699680924416,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.015393899753689766,
+        "grad_max_abs_error": 2.7755575615628914e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.014330199919641018,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.015393899753689766,
+        "grad_max_abs_error": 2.7755575615628914e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.014330199919641018,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 5.551115123125783e-17
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.015393899753689766,
+        "grad_max_abs_error": 2.0816681711721685e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.014330199919641018,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 1.0408340855860843e-16
+      }
+    ]
+  },
+  {
+    "mode": "pp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.015393899753689766,
+        "grad_max_abs_error": 6.245004513516506e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.014330199919641018,
+        "grad_max_abs_error": 6.071532165918825e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.06308399885892868,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.06453189998865128,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.06308399885892868,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.06453189998865128,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.06308399885892868,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.06453189998865128,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "empty",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.06308399885892868,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      },
+      {
+        "step": 1,
+        "loss": 0.0,
+        "updated": false,
+        "rank_max_seconds": 0.06453189998865128,
+        "grad_max_abs_error": 0.0,
+        "weight_max_abs_error": 0.0
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.08026470243930817,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.5474993585194183,
+        "updated": true,
+        "rank_max_seconds": 0.07636020332574844,
+        "grad_max_abs_error": 6.245004513516506e-17,
+        "weight_max_abs_error": 2.220446049250313e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.08026470243930817,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.5474993585194183,
+        "updated": true,
+        "rank_max_seconds": 0.07636020332574844,
+        "grad_max_abs_error": 6.245004513516506e-17,
+        "weight_max_abs_error": 2.220446049250313e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.08026470243930817,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.5474993585194183,
+        "updated": true,
+        "rank_max_seconds": 0.07636020332574844,
+        "grad_max_abs_error": 6.245004513516506e-17,
+        "weight_max_abs_error": 2.220446049250313e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "empty-rank",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.6087898887410357,
+        "updated": true,
+        "rank_max_seconds": 0.08026470243930817,
+        "grad_max_abs_error": 4.163336342344337e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.5474993585194183,
+        "updated": true,
+        "rank_max_seconds": 0.07636020332574844,
+        "grad_max_abs_error": 6.245004513516506e-17,
+        "weight_max_abs_error": 2.220446049250313e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.631251502587492,
+        "updated": true,
+        "rank_max_seconds": 0.08238030225038528,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.09884659945964813,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 4.440892098500626e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.631251502587492,
+        "updated": true,
+        "rank_max_seconds": 0.08238030225038528,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.09884659945964813,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 4.440892098500626e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.631251502587492,
+        "updated": true,
+        "rank_max_seconds": 0.08238030225038528,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.09884659945964813,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 4.440892098500626e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 2,
+    "pattern": "equal",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.631251502587492,
+        "updated": true,
+        "rank_max_seconds": 0.08238030225038528,
+        "grad_max_abs_error": 3.469446951953614e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.578812472514963,
+        "updated": true,
+        "rank_max_seconds": 0.09884659945964813,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 4.440892098500626e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 8,
+    "microbatch": 2,
+    "pattern": "uneven",
+    "overlap": false,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.709415368612276,
+        "updated": true,
+        "rank_max_seconds": 0.08837319910526276,
+        "grad_max_abs_error": 7.45931094670027e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6159140586451017,
+        "updated": true,
+        "rank_max_seconds": 0.06588120013475418,
+        "grad_max_abs_error": 8.326672684688674e-17,
+        "weight_max_abs_error": 1.942890293094024e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 8,
+    "microbatch": 2,
+    "pattern": "uneven",
+    "overlap": false,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.709415368612276,
+        "updated": true,
+        "rank_max_seconds": 0.08837319910526276,
+        "grad_max_abs_error": 7.45931094670027e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6159140586451017,
+        "updated": true,
+        "rank_max_seconds": 0.06588120013475418,
+        "grad_max_abs_error": 8.326672684688674e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 8,
+    "microbatch": 2,
+    "pattern": "uneven",
+    "overlap": false,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.709415368612276,
+        "updated": true,
+        "rank_max_seconds": 0.08837319910526276,
+        "grad_max_abs_error": 7.45931094670027e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6159140586451017,
+        "updated": true,
+        "rank_max_seconds": 0.06588120013475418,
+        "grad_max_abs_error": 8.326672684688674e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 8,
+    "microbatch": 2,
+    "pattern": "uneven",
+    "overlap": false,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.709415368612276,
+        "updated": true,
+        "rank_max_seconds": 0.08837319910526276,
+        "grad_max_abs_error": 7.45931094670027e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6159140586451017,
+        "updated": true,
+        "rank_max_seconds": 0.06588120013475418,
+        "grad_max_abs_error": 8.326672684688674e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381996,
+        "updated": true,
+        "rank_max_seconds": 0.14705750346183777,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 3.122502256758253e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.1394049972295761,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381996,
+        "updated": true,
+        "rank_max_seconds": 0.14705750346183777,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.1394049972295761,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381996,
+        "updated": true,
+        "rank_max_seconds": 0.14705750346183777,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.1394049972295761,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 1,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381996,
+        "updated": true,
+        "rank_max_seconds": 0.14705750346183777,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 2.7755575615628914e-17
+      },
+      {
+        "step": 1,
+        "loss": 3.64243552690611,
+        "updated": true,
+        "rank_max_seconds": 0.1394049972295761,
+        "grad_max_abs_error": 5.551115123125783e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 0,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.07472489774227142,
+        "grad_max_abs_error": 8.326672684688674e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6424355269061093,
+        "updated": true,
+        "rank_max_seconds": 0.06461530178785324,
+        "grad_max_abs_error": 6.938893903907228e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 1,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.07472489774227142,
+        "grad_max_abs_error": 8.326672684688674e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6424355269061093,
+        "updated": true,
+        "rank_max_seconds": 0.06461530178785324,
+        "grad_max_abs_error": 6.938893903907228e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 2,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.07472489774227142,
+        "grad_max_abs_error": 8.326672684688674e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6424355269061093,
+        "updated": true,
+        "rank_max_seconds": 0.06461530178785324,
+        "grad_max_abs_error": 6.938893903907228e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  {
+    "mode": "tp",
+    "backend": "gloo",
+    "world_size": 4,
+    "rank": 3,
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "model": {
+      "vocab": 32,
+      "width": 16,
+      "heads": 4,
+      "layers": 4,
+      "expansion": 4
+    },
+    "sequence": 7,
+    "device_name": "CPU",
+    "batch": 10,
+    "microbatch": 3,
+    "pattern": "uneven",
+    "overlap": true,
+    "verified": true,
+    "timing_kind": "verification_or_profile",
+    "steps": [
+      {
+        "step": 0,
+        "loss": 3.7300528887381987,
+        "updated": true,
+        "rank_max_seconds": 0.07472489774227142,
+        "grad_max_abs_error": 8.326672684688674e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "step": 1,
+        "loss": 3.6424355269061093,
+        "updated": true,
+        "rank_max_seconds": 0.06461530178785324,
+        "grad_max_abs_error": 6.938893903907228e-17,
+        "weight_max_abs_error": 1.1102230246251565e-16
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "distllm"
+version = "0.1.0"
+description = "Token-correct distributed Transformer training and communication experiments"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.14,<2.15"]
+
+[project.optional-dependencies]
+test = ["pytest>=9,<10"]
+
+[tool.setuptools.packages.find]
+include = ["distllm*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

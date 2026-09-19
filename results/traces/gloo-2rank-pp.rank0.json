@@ -1,0 +1,226 @@
+[
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "send",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 148.2
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "send",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 317.4
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "send",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 150.6
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "send",
+    "label": "pipeline_boundary",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 295.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "recv",
+    "label": "pipeline_boundary",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 1455.1
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "recv",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 463.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "recv",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 269.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "recv",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 269.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "send",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 150.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "send",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 128.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "send",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 483.6
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "send",
+    "label": "pipeline_boundary",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 286.7
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "recv",
+    "label": "pipeline_boundary",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 1231.0
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "recv",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 256.4
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "recv",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 518.7
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "recv",
+    "label": "pipeline_boundary",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "peer": 1,
+    "host_call_us": 351.1
+  }
+]
