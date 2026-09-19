@@ -31,9 +31,9 @@ def benchmark(device, elements=4096, repeats=10):
             if op == "all_reduce":
                 work = dist.all_reduce(value, async_op=True)
             elif op == "all_gather":
-                work = dist.all_gather_single(output, value, async_op=True)
+                work = dist.all_gather_into_tensor(output, value, async_op=True)
             else:
-                work = dist.reduce_scatter_single(output, value, async_op=True)
+                work = dist.reduce_scatter_tensor(output, value, async_op=True)
             work.wait()
             if device.type == "cuda":
                 torch.cuda.synchronize()
@@ -67,7 +67,10 @@ def main():
     device = torch.device("cuda", int(os.environ["LOCAL_RANK"])) if args.backend == "nccl" else torch.device("cpu")
     if device.type == "cuda":
         torch.cuda.set_device(device)
-    dist.init_process_group(args.backend, timeout=timedelta(seconds=90))
+    device_id = device if device.type == "cuda" else None
+    dist.init_process_group(
+        args.backend, timeout=timedelta(seconds=90), device_id=device_id
+    )
     try:
         result = dict(backend=args.backend, torch=torch.__version__, operations=benchmark(device, args.elements, args.repeats))
         if dist.get_rank() == 0:

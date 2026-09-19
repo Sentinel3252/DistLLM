@@ -167,7 +167,12 @@ def main():
         raise ValueError("width must be divisible by 4; sequence >= 2; positive steps/batch/layers required")
     if args.backend == "nccl":
         torch.cuda.set_device(int(os.environ["LOCAL_RANK"]))
-    dist.init_process_group(args.backend, timeout=timedelta(seconds=90))
+    device_id = int(os.environ["LOCAL_RANK"]) if args.backend == "nccl" else None
+    dist.init_process_group(
+        args.backend,
+        timeout=timedelta(seconds=90),
+        device_id=torch.device("cuda", device_id) if device_id is not None else None,
+    )
     try:
         experiment(args)
     finally:

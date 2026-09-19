@@ -1,11 +1,11 @@
 {
   "date": "2026-09-19",
-  "python": "3.14.7",
-  "torch": "2.14.0+cpu",
+  "python": "3.12.13",
+  "torch": "2.11.0+cu128",
   "backend": "gloo",
   "device": "cpu",
   "dtype": "float64",
-  "pytest_tests": 11,
+  "pytest_tests": 12,
   "pytest_failures": 0,
   "pytest_errors": 0,
   "configurations": 32,
@@ -14,6 +14,8 @@
   "max_gradient_absolute_error": 9.71445146547012e-17,
   "max_parameter_absolute_error": 7.216449660063518e-16,
   "gpu_scripts_syntax_checked": true,
+  "rtx4090_single_gpu_benchmark": true,
+  "rtx4090_benchmark_evidence": "results/gpu-study-rtx4090.json",
   "nccl_multigpu_validated": false,
   "cuda_overlap_measured": false,
   "nsight_timeline_collected": false

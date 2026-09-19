@@ -2,7 +2,7 @@
 
 解决 SFT 变长监督标签下的梯度累积偏差：不同 micro-batch / DDP rank 的有效 token 数不同时，平均各自的 mean loss 不等于全局 token mean。实现覆盖 PyTorch Distributed、DDP、MLP Column/Row TP、GPipe PP、NCCL 后端、CUDA Stream/Event 和 Nsight Systems 验收流程。
 
-**当前交付：CPU/Gloo 的真实 2/4 进程数值验证已完成；多 GPU NCCL、CUDA 重叠和 Nsight timeline 尚未实测。** 本机为 Windows + 单张 RTX 4060；不能据此宣称多卡加速或上游已合并修复。
+**当前交付：CPU/Gloo 的真实 2/4 进程数值验证与 RTX 4090 单卡 CUDA 性能实验已完成。** 当前机器只有一张 GPU，因此不虚构多卡 NCCL scaling、跨卡 overlap 或 Nsight timeline；多卡执行路径和采集脚本保留为后续验收项，也不声称上游已合并修复。
 
 ## 问题来源与定位
 
@@ -44,7 +44,7 @@ L = sum(S_rm) / sum(N_rm)
 
 ## 本机复现
 
-只依赖 PyTorch，测试另需 pytest；Python >= 3.11。已验证版本：Python 3.14、PyTorch 2.14.0+cpu、pytest 9.1.1。
+只依赖 PyTorch，测试另需 pytest；Python >= 3.11。最新回归环境为 Python 3.12、PyTorch 2.11.0、pytest 9.1.1；GPU 性能环境为 PyTorch 2.11.0+cu130、RTX 4090。
 
 Windows PowerShell（本项目已建好 `.venv`）：
 
@@ -62,6 +62,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -e '.[test]'
 python -m distllm.reproduce
+python -m distllm.gpu_study --quality-only
 pytest -q
 torchrun --standalone --nproc-per-node=2 -m distllm.run \
   --mode ddp --backend gloo --verify --trace --batch 10 --microbatch 3
@@ -69,7 +70,7 @@ torchrun --standalone --nproc-per-node=2 -m distllm.run \
 
 测试启动器使用操作系统分配的回环 TCP 端口，不依赖固定端口。Windows 的 C++ FileStore 无法打开本机中文工作区路径，因此测试直接使用 TCPStore，不改动系统网络配置。
 
-## 已测结果
+## 正确性与优化轨迹结果
 
 `python -m distllm.reproduce` 固定 seed=23，单层 Transformer、CPU/FP64、每个 micro-batch 的有效监督 token 为 `[1, 2, 4, 6]`：
 
@@ -82,17 +83,41 @@ torchrun --standalone --nproc-per-node=2 -m distllm.run \
 
 分布式矩阵：2/4 ranks ×（DDP/TP/PP × 5 个配置 + TP 同步对照）= **32 组配置**，每组 2 步 AdamW 更新，保存 **96 份 rank 结果**。覆盖不均衡 token、micro-batch=1/3、等 token、全空窗口、单个数据 rank 无监督 token、尾部不足及同步/异步 TP。逐 rank 对照完整 batch 的 loss、逐参数梯度和更新后权重；FP64 最大梯度绝对误差 `9.72e-17`，最大权重绝对误差 `7.22e-16`。
 
+进一步扫描监督 token 最大/最小比 1.0×、1.29×、1.94×、3.88×、15.5×：mean-of-means 的梯度相对 L2 偏差分别为 0、0.081、0.221、0.454、1.007，token-correct 路径在 FP64 下均与完整 batch 一致。固定变长窗口训练 50 个 AdamW step 后，错误路径相对 reference 的参数 L2 偏离 **13.51%**，全局 token objective 为 1.1020；修复路径参数偏差 `1.35e-16`，objective 0.6283，与 reference 一致。这是固定合成任务上的机制与轨迹实验，不外推为真实数据集的模型质量收益。
+
 原始证据：
 
-- [验收摘要（11 项测试通过）](results/validation.json)
+- [验收摘要（12 项测试通过）](results/validation.json)
 - [JUnit 测试报告](results/pytest.xml)
 - [归一化复现](results/reproduction.json)
 - [2-rank 结果](results/verified-gloo-2ranks.json)
 - [4-rank 结果](results/verified-gloo-4ranks.json)
 - [2-rank collectives](results/collectives-gloo-2ranks.json)
 - [4-rank collectives](results/collectives-gloo-4ranks.json)
+- [RTX 4090 完整实验](results/gpu-study-rtx4090.json)
 
-## GPU 验收与性能剖析
+## RTX 4090 单卡性能实验
+
+`gpu_study.py` 使用 23.08M 参数 Transformer（6 层、width=512、vocab=4096）、BF16、batch=16、sequence=256，在相同 2,161 个监督 token 上扫描 accumulation micro-batch。每点预热 5 次、测量 20 次，端到端包含 forward、backward、zero-grad 和最终梯度归一化：
+
+| micro-batch | step 中位数 | P95 | 监督 token/s | peak allocated |
+|---:|---:|---:|---:|---:|
+| 1 | 34.87 ms | 35.20 ms | 61,975 | 137.4 MiB |
+| 2 | 17.56 ms | 17.64 ms | 123,065 | 167.7 MiB |
+| 4 | 8.94 ms | 9.40 ms | 241,805 | 233.3 MiB |
+| 8 | 6.59 ms | 6.68 ms | 327,790 | 352.5 MiB |
+| 16 | 6.09 ms | 6.13 ms | 354,630 | 549.2 MiB |
+
+从 micro-batch 1 增至 16，吞吐提升 **5.72×**，显式展示 kernel launch/小矩阵利用率与 activation memory 的权衡。micro-batch=4 的 ABBA 配对实验中，token-correct 相对错误 mean-of-means 的 step time 为 **-0.67%**（测量噪声量级），peak allocated 同为 234.3 MiB，说明修复没有可测的吞吐或显存回退。这里报告的是本项目小模型训练 step，不是大模型 MFU。
+
+复现：
+
+```bash
+python -m distllm.gpu_study --repeats 20 --warmup 5 \
+  --output results/gpu-study-rtx4090.json
+```
+
+## 多 GPU 验收与性能剖析（待多卡机器）
 
 Linux 4 GPU 环境安装匹配驱动的 PyTorch 2.14 CUDA wheel，以及 Nsight Systems。先运行正确性，再运行性能：
 
@@ -104,7 +129,7 @@ python -m distllm.scaling \
   results/bench-ddp-2-mb4/result.rank0.json
 ```
 
-验证使用 FP64；基准使用 FP32。GPU 脚本尚未在本机执行，所有性能结论必须等待输出；内存不足时可统一减小模型/输入设置后重跑全部对照。基准固定 global batch=32，扫描 micro-batch=1/2/4/8，使用 rank-max step time 的中位数，单 GPU reference 作为 strong-scaling 基准。TP 重叠对照按 ABBA 顺序运行。`scaling.py` 拒绝把验证/追踪计时当作 benchmark，也拒绝不同模型、设备型号或工作负载的对比。
+多卡验证使用 FP64，基准使用 FP32。由于当前只有一张 RTX 4090，这部分脚本未执行，不能把单卡数据解释为 scaling 或通信重叠收益。基准固定 global batch=32，扫描 micro-batch=1/2/4/8，使用 rank-max step time 的中位数，单 GPU reference 作为 strong-scaling 基准。TP 重叠对照按 ABBA 顺序运行。`scaling.py` 拒绝把验证/追踪计时当作 benchmark，也拒绝不同模型、设备型号或工作负载的对比。
 
 `Comm` 记录的是本项目显式调用（DDP bucket / TP / token count / loss / PP P2P），不声称拦截框架内部所有 collective。JSON 中 `caller_stream` 和 `submission_stream` 不是 NCCL 的内部执行 stream；后者应在 Nsight 中确认。CPU `host_submit_us` / `host_wait_us` 不代表 GPU 执行时长。CUDA event 区间标为 `cuda_interval_ms`，包含通信依赖开销，不能当作纯 NCCL kernel 时间。
 
@@ -126,6 +151,7 @@ distllm/train.py        DDP/TP 累积与 GPipe 执行
 distllm/comm.py         异步通信、CUDA stream/event、trace
 distllm/run.py          训练、单进程 reference 对照、结果保存
 distllm/reproduce.py    错误归一化机制复现
+distllm/gpu_study.py    token skew、优化轨迹与 4090 性能实验
 distllm/collectives.py  三种 collective 数值验证与计时
 distllm/analyze.py      GPU 区间并集、重叠及 Ring 模型
 distllm/scaling.py      强扩展效率计算与可比性校验

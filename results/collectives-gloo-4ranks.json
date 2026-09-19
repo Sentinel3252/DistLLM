@@ -4,10 +4,10 @@
     "payload_bytes": 64,
     "ranks": 4,
     "ideal_ring_tx_bytes": 96.0,
-    "rank_max_median_seconds": 0.0013588499859906733,
+    "rank_max_median_seconds": 0.0004880959168076515,
     "samples_seconds": [
-      0.001272300025448203,
-      0.0014453999465331435
+      0.0005942406132817268,
+      0.0003819512203335762
     ],
     "verified": true
   },
@@ -16,10 +16,10 @@
     "payload_bytes": 64,
     "ranks": 4,
     "ideal_ring_tx_bytes": 192,
-    "rank_max_median_seconds": 0.000638050027191639,
+    "rank_max_median_seconds": 0.00023004040122032166,
     "samples_seconds": [
-      0.0007145999697968364,
-      0.0005615000845864415
+      0.00021619442850351334,
+      0.00024388637393712997
     ],
     "verified": true
   },
@@ -28,10 +28,10 @@
     "payload_bytes": 256,
     "ranks": 4,
     "ideal_ring_tx_bytes": 192.0,
-    "rank_max_median_seconds": 0.0010217999806627631,
+    "rank_max_median_seconds": 0.0004498516209423542,
     "samples_seconds": [
-      0.0009997999295592308,
-      0.0010438000317662954
+      0.0004679197445511818,
+      0.0004317834973335266
     ],
     "verified": true
   }
