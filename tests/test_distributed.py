@@ -7,8 +7,8 @@ import torch
 import torch.distributed as dist
 import torch.multiprocessing as mp
 
-from distllm.run import experiment, parser
 from distllm.collectives import benchmark
+from distllm.run import experiment, parser
 
 
 def worker(rank, size, port, output):

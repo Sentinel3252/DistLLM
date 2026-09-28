@@ -55,8 +55,13 @@ def analyze(path):
     return {device: metrics(*intervals) for device, intervals in groups.items()}
 
 
-if __name__ == "__main__":
+def main():
+    """Run the trace analyzer CLI."""
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("trace")
     print(json.dumps(analyze(parser.parse_args().trace), indent=2))
+
+
+if __name__ == "__main__":
+    main()
 

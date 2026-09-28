@@ -25,10 +25,15 @@ def compare(reference, candidate):
                 input_tokens_per_second=candidate["batch"] * candidate["sequence"] / duration)
 
 
-if __name__ == "__main__":
+def main():
+    """Run the strong-scaling comparison CLI."""
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("reference")
     parser.add_argument("candidate")
     args = parser.parse_args()
     print(json.dumps(compare(json.loads(Path(args.reference).read_text()),
                              json.loads(Path(args.candidate).read_text())), indent=2))
+
+
+if __name__ == "__main__":
+    main()

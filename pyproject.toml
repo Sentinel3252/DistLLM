@@ -5,16 +5,64 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "distllm"
 version = "0.1.0"
-description = "Token-correct distributed Transformer training and communication experiments"
+description = "Token-correct distributed Transformer training with auditable DDP, TP, and PP implementations"
+readme = "README.md"
 requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+keywords = [
+  "distributed-training",
+  "language-models",
+  "pytorch",
+  "tensor-parallelism",
+  "pipeline-parallelism",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
 dependencies = ["torch>=2.14,<2.15"]
 
 [project.optional-dependencies]
 test = ["pytest>=9,<10"]
+dev = [
+  "build>=1.3,<2",
+  "pytest>=9,<10",
+  "ruff>=0.13,<1",
+  "twine>=6,<7",
+]
+
+[project.scripts]
+distllm-analyze = "distllm.analyze:main"
+distllm-collectives = "distllm.collectives:main"
+distllm-gpu-study = "distllm.gpu_study:main"
+distllm-reproduce = "distllm.reproduce:main"
+distllm-run = "distllm.run:main"
+distllm-scaling = "distllm.scaling:main"
+
+[project.urls]
+Homepage = "https://github.com/Sentinel3252/DistLLM"
+Documentation = "https://github.com/Sentinel3252/DistLLM#readme"
+Issues = "https://github.com/Sentinel3252/DistLLM/issues"
+Source = "https://github.com/Sentinel3252/DistLLM"
 
 [tool.setuptools.packages.find]
 include = ["distllm*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+addopts = "--strict-markers"
 
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["research/finetune.upstream.py"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

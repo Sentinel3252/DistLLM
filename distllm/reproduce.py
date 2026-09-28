@@ -40,8 +40,13 @@ def reproduce():
                 fixed_gradient_max_abs=(fixed_gradient - reference_gradient).abs().max().item())
 
 
-if __name__ == "__main__":
+def main():
+    """Run the deterministic normalization reproduction."""
     result = reproduce()
     Path("results").mkdir(exist_ok=True)
-    Path("results/reproduction.json").write_text(json.dumps(result, indent=2))
+    Path("results/reproduction.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
     print(json.dumps(result, indent=2))
+
+
+if __name__ == "__main__":
+    main()

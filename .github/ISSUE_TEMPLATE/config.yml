@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage questions and ideas
+    url: https://github.com/Sentinel3252/DistLLM/discussions
+    about: Ask for help or discuss ideas that are not yet actionable issues.
+  - name: Security vulnerability
+    url: https://github.com/Sentinel3252/DistLLM/security/advisories/new
+    about: Report security issues privately.
