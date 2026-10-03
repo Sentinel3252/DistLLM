@@ -1,0 +1,84 @@
+[
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "dp_token_count",
+    "payload_bytes": 8,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 53.7,
+    "host_wait_us": 5.6
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "ddp_gradient_bucket",
+    "payload_bytes": 108800,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 57.8
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "dp_loss_sum",
+    "payload_bytes": 8,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 62.5,
+    "host_wait_us": 458.0
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "dp_token_count",
+    "payload_bytes": 8,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 43.8,
+    "host_wait_us": 4.6
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "ddp_gradient_bucket",
+    "payload_bytes": 108800,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 81.8
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "dp_loss_sum",
+    "payload_bytes": 8,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 59.4,
+    "host_wait_us": 298.8
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "op": "all_reduce",
+    "payload_bytes": 64,
+    "ranks": 2,
+    "ideal_ring_tx_bytes": 64.0,
+    "rank_max_median_seconds": 0.00019569741562008858,
+    "samples_seconds": [
+      0.00018700025975704193,
+      0.00020439457148313522
+    ],
+    "verified": true
+  },
+  {
+    "op": "all_gather",
+    "payload_bytes": 64,
+    "ranks": 2,
+    "ideal_ring_tx_bytes": 64,
+    "rank_max_median_seconds": 0.00012600747868418694,
+    "samples_seconds": [
+      0.00013738218694925308,
+      0.00011463277041912079
+    ],
+    "verified": true
+  },
+  {
+    "op": "reduce_scatter",
+    "payload_bytes": 128,
+    "ranks": 2,
+    "ideal_ring_tx_bytes": 64.0,
+    "rank_max_median_seconds": 0.00015211524441838264,
+    "samples_seconds": [
+      0.00017575174570083618,
+      0.0001284787431359291
+    ],
+    "verified": true
+  }
+]

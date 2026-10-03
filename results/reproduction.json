@@ -1,0 +1,18 @@
+{
+  "torch": "2.14.0+cpu",
+  "dtype": "float64",
+  "device": "cpu",
+  "seed": 23,
+  "supervised_tokens_per_microbatch": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "reference_loss": 3.703382606289341,
+  "mean_of_means_loss": 3.708431762083554,
+  "fixed_loss": 3.7033826062893413,
+  "wrong_gradient_relative_l2": 0.7922870097924339,
+  "fixed_gradient_relative_l2": 1.5052372634593734e-16,
+  "fixed_gradient_max_abs": 5.551115123125783e-17
+}

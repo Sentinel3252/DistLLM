@@ -1,0 +1,898 @@
+[
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 59.8,
+    "host_wait_us": 480.0
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 70.1,
+    "host_wait_us": 379.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 44.1,
+    "host_wait_us": 407.0
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 42.0,
+    "host_wait_us": 420.8
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 46.4,
+    "host_wait_us": 440.1
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 42.5,
+    "host_wait_us": 642.8
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 51.4,
+    "host_wait_us": 336.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 39.3,
+    "host_wait_us": 489.8
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 49.8,
+    "host_wait_us": 407.7
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 47.7,
+    "host_wait_us": 623.7
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 59.0,
+    "host_wait_us": 519.2
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 47.1,
+    "host_wait_us": 403.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 46.8,
+    "host_wait_us": 332.0
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 40.9,
+    "host_wait_us": 889.4
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 55.1,
+    "host_wait_us": 316.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 42.6,
+    "host_wait_us": 351.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 46.2,
+    "host_wait_us": 411.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 43.6,
+    "host_wait_us": 432.1
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 39.4,
+    "host_wait_us": 649.8
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 48.4,
+    "host_wait_us": 569.1
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 52.1,
+    "host_wait_us": 284.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 44.5,
+    "host_wait_us": 422.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 49.6,
+    "host_wait_us": 334.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 50.3,
+    "host_wait_us": 553.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 61.1,
+    "host_wait_us": 427.4
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 43.7,
+    "host_wait_us": 458.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 38.3,
+    "host_wait_us": 365.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 52.4,
+    "host_wait_us": 763.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 51.6,
+    "host_wait_us": 503.7
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 44.4,
+    "host_wait_us": 554.2
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 48.5,
+    "host_wait_us": 370.1
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 83.4,
+    "host_wait_us": 429.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 56.3,
+    "host_wait_us": 523.8
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 53.6,
+    "host_wait_us": 522.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 46.7,
+    "host_wait_us": 447.8
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 46.0,
+    "host_wait_us": 1072.7
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 45.9,
+    "host_wait_us": 320.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 94.5,
+    "host_wait_us": 307.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 128.7,
+    "host_wait_us": 321.2
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 42.1,
+    "host_wait_us": 403.6
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 44.0,
+    "host_wait_us": 502.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 171.8,
+    "host_wait_us": 443.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 55.0,
+    "host_wait_us": 477.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 50.5,
+    "host_wait_us": 452.6
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 49.8,
+    "host_wait_us": 431.1
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 41.8,
+    "host_wait_us": 506.0
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 47.0,
+    "host_wait_us": 301.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 51.2,
+    "host_wait_us": 308.0
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 47.3,
+    "host_wait_us": 363.1
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 83.8,
+    "host_wait_us": 507.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 56.5,
+    "host_wait_us": 448.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 50.6,
+    "host_wait_us": 389.1
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 47.5,
+    "host_wait_us": 318.1
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 41.9,
+    "host_wait_us": 349.6
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 41.6,
+    "host_wait_us": 373.7
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 2688,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 50.3,
+    "host_wait_us": 329.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 52.7,
+    "host_wait_us": 362.5
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 43.5,
+    "host_wait_us": 359.3
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 44.9,
+    "host_wait_us": 391.2
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_row_output",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 43.5,
+    "host_wait_us": 434.8
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 47.4,
+    "host_wait_us": 310.8
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 38.4,
+    "host_wait_us": 415.9
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 40.1,
+    "host_wait_us": 357.1
+  },
+  {
+    "rank": 0,
+    "group_ranks": [
+      0,
+      1
+    ],
+    "op": "all_reduce",
+    "label": "tp_input_gradient",
+    "payload_bytes": 896,
+    "caller_stream": null,
+    "submission_stream": null,
+    "host_submit_us": 40.9,
+    "host_wait_us": 378.9
+  }
+]
